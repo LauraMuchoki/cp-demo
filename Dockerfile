@@ -26,6 +26,9 @@ RUN confluent-hub install --no-prompt cjmatta/kafka-connect-sse:1.0
 # Install FromJson transformation
 RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-json-schema:0.2.5
 
+#Install Twitter Connector
+RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-twitter:0.3.34
+
 # Install Elasticsearch connector
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:11.0.0
 
