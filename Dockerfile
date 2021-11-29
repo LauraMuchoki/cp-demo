@@ -29,6 +29,9 @@ RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-json-schema:0.
 #Install Twitter Connector
 RUN confluent-hub install --no-prompt jcustenborder/kafka-connect-twitter:0.3.34
 
+#Install Database JDBC connector
+RUN confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:latest
+
 # Install Elasticsearch connector
 RUN confluent-hub install --no-prompt confluentinc/kafka-connect-elasticsearch:11.0.0
 
